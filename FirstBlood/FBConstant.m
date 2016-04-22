@@ -9,3 +9,7 @@ NSString * const FBCarouselViewUrl = @"http://oper.imeetin.com/rest/user/configs
 NSString * const FBCarouselViewDetailUrlHeader = @"http://oper.imeetin.com/rest/article/view?id=";
 NSString * const FBFirstCellUrlHeader = @"http://oper.imeetin.com/rest/tenant/list?areaID=all&sort=taste&sceneID=400";
 NSString * const FBSecCellUrlHeader = @"http://oper.imeetin.com/rest/subject/list?page=";
+
+
+//SeekRestaurant
+NSString * const FBSeekRestaurantTopicUrl = @"http://rest.imeetin.com/rest/article/view?id=";

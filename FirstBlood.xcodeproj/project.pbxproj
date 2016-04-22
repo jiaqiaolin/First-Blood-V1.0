@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FA0AE741CC9C47400A4E074 /* FBDishesSortView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA0AE6D1CC9C47400A4E074 /* FBDishesSortView.m */; settings = {ASSET_TAGS = (); }; };
+		3FA0AE751CC9C47400A4E074 /* FBAllDishesSortView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA0AE6F1CC9C47400A4E074 /* FBAllDishesSortView.m */; settings = {ASSET_TAGS = (); }; };
+		3FA0AE761CC9C47400A4E074 /* FBHotDistrictView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA0AE711CC9C47400A4E074 /* FBHotDistrictView.m */; settings = {ASSET_TAGS = (); }; };
+		3FA0AE771CC9C47400A4E074 /* FBTopicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA0AE731CC9C47400A4E074 /* FBTopicView.m */; settings = {ASSET_TAGS = (); }; };
+		3FA0AE7A1CC9C48200A4E074 /* TopicArticleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA0AE791CC9C48200A4E074 /* TopicArticleModel.m */; settings = {ASSET_TAGS = (); }; };
 		8AC21FBA482C7AB968271412 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE07FD59692060158A5A8B3 /* libPods.a */; };
 		BF05540D1CC5249100B608E6 /* FBPrivateEnjoyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF05540B1CC5249100B608E6 /* FBPrivateEnjoyViewController.m */; };
 		BF05540E1CC5249100B608E6 /* FBPrivateEnjoyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF05540C1CC5249100B608E6 /* FBPrivateEnjoyViewController.xib */; };
@@ -60,6 +65,16 @@
 
 /* Begin PBXFileReference section */
 		0ADF5CE1A9ECF69F0ECB2CF1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		3FA0AE6C1CC9C47400A4E074 /* FBDishesSortView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBDishesSortView.h; sourceTree = "<group>"; };
+		3FA0AE6D1CC9C47400A4E074 /* FBDishesSortView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBDishesSortView.m; sourceTree = "<group>"; };
+		3FA0AE6E1CC9C47400A4E074 /* FBAllDishesSortView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBAllDishesSortView.h; sourceTree = "<group>"; };
+		3FA0AE6F1CC9C47400A4E074 /* FBAllDishesSortView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBAllDishesSortView.m; sourceTree = "<group>"; };
+		3FA0AE701CC9C47400A4E074 /* FBHotDistrictView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBHotDistrictView.h; sourceTree = "<group>"; };
+		3FA0AE711CC9C47400A4E074 /* FBHotDistrictView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBHotDistrictView.m; sourceTree = "<group>"; };
+		3FA0AE721CC9C47400A4E074 /* FBTopicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBTopicView.h; sourceTree = "<group>"; };
+		3FA0AE731CC9C47400A4E074 /* FBTopicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBTopicView.m; sourceTree = "<group>"; };
+		3FA0AE781CC9C48200A4E074 /* TopicArticleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicArticleModel.h; sourceTree = "<group>"; };
+		3FA0AE791CC9C48200A4E074 /* TopicArticleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicArticleModel.m; sourceTree = "<group>"; };
 		5AE07FD59692060158A5A8B3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADEF076F8C37A3A5919B151E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		BF05540A1CC5249100B608E6 /* FBPrivateEnjoyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBPrivateEnjoyViewController.h; sourceTree = "<group>"; };
@@ -142,6 +157,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3FA0AE691CC9C34700A4E074 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BF96E2691CC5095400177705 /* FBSeekRestaurantViewController.h */,
+				BF96E26A1CC5095400177705 /* FBSeekRestaurantViewController.m */,
+				BF96E26B1CC5095400177705 /* FBSeekRestaurantViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3FA0AE6A1CC9C35000A4E074 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3FA0AE6C1CC9C47400A4E074 /* FBDishesSortView.h */,
+				3FA0AE6D1CC9C47400A4E074 /* FBDishesSortView.m */,
+				3FA0AE6E1CC9C47400A4E074 /* FBAllDishesSortView.h */,
+				3FA0AE6F1CC9C47400A4E074 /* FBAllDishesSortView.m */,
+				3FA0AE701CC9C47400A4E074 /* FBHotDistrictView.h */,
+				3FA0AE711CC9C47400A4E074 /* FBHotDistrictView.m */,
+				3FA0AE721CC9C47400A4E074 /* FBTopicView.h */,
+				3FA0AE731CC9C47400A4E074 /* FBTopicView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3FA0AE6B1CC9C35500A4E074 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3FA0AE781CC9C48200A4E074 /* TopicArticleModel.h */,
+				3FA0AE791CC9C48200A4E074 /* TopicArticleModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		6F7D31CDED103A3EA5C1BDBD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -290,9 +339,9 @@
 		BF96E2591CC5052300177705 /* SeekRestaurant */ = {
 			isa = PBXGroup;
 			children = (
-				BF96E2691CC5095400177705 /* FBSeekRestaurantViewController.h */,
-				BF96E26A1CC5095400177705 /* FBSeekRestaurantViewController.m */,
-				BF96E26B1CC5095400177705 /* FBSeekRestaurantViewController.xib */,
+				3FA0AE6B1CC9C35500A4E074 /* Model */,
+				3FA0AE6A1CC9C35000A4E074 /* View */,
+				3FA0AE691CC9C34700A4E074 /* Controller */,
 			);
 			path = SeekRestaurant;
 			sourceTree = "<group>";
@@ -507,6 +556,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FA0AE761CC9C47400A4E074 /* FBHotDistrictView.m in Sources */,
 				BF2FA6E41CC654500040EB47 /* FBCarouselView.m in Sources */,
 				BF96E2181CC4F84F00177705 /* AppDelegate.m in Sources */,
 				BF96E26C1CC5095400177705 /* FBSeekRestaurantViewController.m in Sources */,
@@ -514,7 +564,9 @@
 				BF2FA6F21CC670CA0040EB47 /* FBRecommendSecCell.m in Sources */,
 				BF96E2151CC4F84F00177705 /* main.m in Sources */,
 				BF96E2211CC4F84F00177705 /* FirstBlood.xcdatamodeld in Sources */,
+				3FA0AE741CC9C47400A4E074 /* FBDishesSortView.m in Sources */,
 				BF2FA6FA1CC752C70040EB47 /* FBTabBarController.m in Sources */,
+				3FA0AE7A1CC9C48200A4E074 /* TopicArticleModel.m in Sources */,
 				BF0554181CC5258F00B608E6 /* FBMyViewController.m in Sources */,
 				BF2FA6EF1CC670B40040EB47 /* FBRecommendFirstCell.m in Sources */,
 				BF96E24B1CC4F8B400177705 /* FBBaseViewController.m in Sources */,
@@ -522,6 +574,8 @@
 				BF05540D1CC5249100B608E6 /* FBPrivateEnjoyViewController.m in Sources */,
 				BF2FA6F51CC67D780040EB47 /* FBRecommendFirstCellView.m in Sources */,
 				BF96E2561CC501A500177705 /* FBConstant.m in Sources */,
+				3FA0AE751CC9C47400A4E074 /* FBAllDishesSortView.m in Sources */,
+				3FA0AE771CC9C47400A4E074 /* FBTopicView.m in Sources */,
 				BF96E24E1CC4FA5800177705 /* FBBaseNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
