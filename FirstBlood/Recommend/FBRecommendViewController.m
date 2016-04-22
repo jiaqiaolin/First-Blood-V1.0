@@ -66,7 +66,7 @@
     [placeHoderView setFrame:CGRectMake(0, 0, FB_SCREEN_WIDTH, FB_SCREEN_WIDTH)];
     [self.tableView setTableHeaderView:placeHoderView];
     
-    
+
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle
@@ -276,12 +276,7 @@
 
 - (void)setCarouselViewWithArray:(NSMutableArray *)ImageArray;
 {
-//    NSMutableArray *ImageArray1 = [NSMutableArray array];
-//    for (int i = 1; i < 5; i++)
-//    {
-//        UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"%d.jpg",i]];
-//        [ImageArray1 addObject:image];
-//    }
+
     FBCarouselView *carousel = [[FBCarouselView alloc] initWithFrame:CGRectMake(0, 0, FB_SCREEN_WIDTH, FB_SCREEN_WIDTH) imageArray:ImageArray returnBlock:^(NSInteger currentIndex) {
         NSLog(@"轮播图index = %ld",currentIndex);
         NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",FBCarouselViewDetailUrlHeader,self.carouselDetailSuffixArray[currentIndex]]];
