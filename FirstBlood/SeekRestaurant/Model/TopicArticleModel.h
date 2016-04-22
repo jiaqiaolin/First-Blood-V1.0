@@ -11,6 +11,6 @@
 @interface TopicArticleModel : NSObject
 
 
-@property (nonatomic, strong) NSString *discoveryBanner;
+@property (nonatomic, copy) NSString *discoveryBanner;
 
 @end

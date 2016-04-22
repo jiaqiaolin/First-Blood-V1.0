@@ -17,5 +17,5 @@ UIKIT_EXTERN NSString * const FBSecCellUrlHeader;
 
 //SeekRestaurant
 UIKIT_EXTERN NSString * const FBSeekRestaurantTopicUrl;
-
+UIKIT_EXTERN NSString * const FBSortByDishesUrl;
 

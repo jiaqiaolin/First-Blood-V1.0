@@ -15,6 +15,7 @@
 #import "FBTopicView.h"
 #import "FBHttpsServer.h"
 #import "TopicArticleModel.h"
+#import "FBSortByDishesViewController.h"
 @interface FBSeekRestaurantViewController ()
 /** abc*/
 @property (nonatomic, strong) dispatch_source_t timer;
@@ -44,7 +45,13 @@
     [self.view addSubview:scrollView];
     FBAllDishesSortView* view = [[FBAllDishesSortView alloc]initWithFrame:CGRectMake(0, 0, FB_SCREEN_WIDTH, FB_SCREEN_HEIGHT / 3.5) returnTagsBlock:^(NSInteger tags) {
         
+        
+        FBSortByDishesViewController* vc = [[FBSortByDishesViewController alloc]init];
+        vc.tagID = tags;
+        [self.navigationController pushViewController:vc animated:YES];
         NSLog(@"%@",[NSString stringWithFormat:@"%@%ld",FBSeekRestaurantTopicUrl,tags]);
+        
+        
     }];
     
     FBHotDistrictView* FBHDView = [[FBHotDistrictView alloc]initWithFrame:CGRectMake(0, FB_SCREEN_HEIGHT / 3.5, FB_SCREEN_WIDTH, FB_SCREEN_HEIGHT / 2.2)];
