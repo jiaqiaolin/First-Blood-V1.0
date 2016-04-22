@@ -32,6 +32,27 @@
 #define FB_CAROUSEL_VIEW_RIGHT_TAG 102
 
 
+#define FB_FoodNearByUrl           @"http://oper.imeetin.com/rest/goods/listNearFood?page=1&lng=113.345806&lat=23.174961"
+
+// 美食附近
+
+#define FB_PlayNearByUrl           @"http://oper.imeetin.com/rest/goods/listNearActive?page=1&lng=113.345799&lat=23.174961" // 美食附近
+
+#define FB_FoodNearXQByUrl           @"http://oper.imeetin.com/rest/goods/view?id=" // 附近详情
+
+
+#define FB_Food1ScreenUrl           @"http://oper.imeetin.com/rest/goods/listFood?page=1&tagID=4003" // 筛选详情
+
+#define FB_Food2ScreenUrl           @"http://oper.imeetin.com/rest/goods/listFood?page=1&tagID=4004" // 筛选详情
+
+#define FB_Food3ScreenUrl           @"http://oper.imeetin.com/rest/goods/listFood?page=1&tagID=4005" // 筛选详情
+#define FB_Food4ScreenUrl           @"http://oper.imeetin.com/rest/goods/listFood?page=1&tagID=4006" // 筛选详情
+#define FB_Food5ScreenUrl           @"http://oper.imeetin.com/rest/goods/listFood?page=1&tagID=4007" // 筛选详情
+#define FB_Food6ScreenUrl           @"http://oper.imeetin.com/rest/goods/listFood?page=1&tagID=4008" // 筛选详情
+#define FB_Food7ScreenUrl           @"http://oper.imeetin.com/rest/goods/listFood?page=1&tagID=4009" // 筛选详情
+#define FB_Food8ScreenUrl           @"http://oper.imeetin.com/rest/goods/listFood?page=1&tagID=4012" // 筛选详情
+#define FB_Food9ScreenUrl           @"http://oper.imeetin.com/rest/goods/listFood?page=1&tagID=4013" // 筛选详情
+
 
 
 #endif /* PrefixHeader_pch */

@@ -9,3 +9,13 @@ UIKIT_EXTERN NSString * const FBCarouselViewUrl;
 UIKIT_EXTERN NSString * const FBCarouselViewDetailUrlHeader;
 UIKIT_EXTERN NSString * const FBFirstCellUrlHeader;
 UIKIT_EXTERN NSString * const FBSecCellUrlHeader;
+
+
+
+
+
+
+//SeekRestaurant
+UIKIT_EXTERN NSString * const FBSeekRestaurantTopicUrl;
+UIKIT_EXTERN NSString * const FBSortByDishesUrl;
+
