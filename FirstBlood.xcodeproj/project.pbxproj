@@ -7,8 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		3F89D0071CCA5806003BB94B /* FBShopTableViewCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F89D0051CCA5806003BB94B /* FBShopTableViewCell2.m */; settings = {ASSET_TAGS = (); }; };
 		3F89D0081CCA5806003BB94B /* FBShopTableViewCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F89D0061CCA5806003BB94B /* FBShopTableViewCell2.xib */; settings = {ASSET_TAGS = (); }; };
+=======
+
+
+		3F5EAF411CC9FE9400A2098A /* FBFoodPrivateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5EAF361CC9FE9400A2098A /* FBFoodPrivateModel.m */; };
+		3F5EAF421CC9FE9400A2098A /* FBPlayPrivateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5EAF381CC9FE9400A2098A /* FBPlayPrivateModel.m */; };
+		3F5EAF431CC9FE9400A2098A /* FBFoodPlayXQModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5EAF3A1CC9FE9400A2098A /* FBFoodPlayXQModel.m */; };
+		3F5EAF441CC9FE9400A2098A /* FBNearbyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5EAF3C1CC9FE9400A2098A /* FBNearbyModel.m */; };
+		3F5EAF451CC9FE9400A2098A /* FBNearbyXQModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5EAF3E1CC9FE9400A2098A /* FBNearbyXQModel.m */; };
+		3F5EAF461CC9FE9400A2098A /* FBScreenXQModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5EAF401CC9FE9400A2098A /* FBScreenXQModel.m */; };
+		3F5EAF5B1CC9FEB200A2098A /* FBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5EAF491CC9FEB200A2098A /* FBTableViewCell.m */; };
+		3F5EAF5C1CC9FEB200A2098A /* FBTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F5EAF4A1CC9FEB200A2098A /* FBTableViewCell.xib */; };
+		3F5EAF5D1CC9FEB200A2098A /* FBFoodXQTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5EAF4C1CC9FEB200A2098A /* FBFoodXQTableViewCell.m */; };
+		3F5EAF5E1CC9FEB200A2098A /* FBFoodXQTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F5EAF4D1CC9FEB200A2098A /* FBFoodXQTableViewCell.xib */; };
+		3F5EAF5F1CC9FEB200A2098A /* 钱.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F5EAF4E1CC9FEB200A2098A /* 钱.png */; };
+		3F5EAF601CC9FEB200A2098A /* FBFoodNearbyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5EAF501CC9FEB200A2098A /* FBFoodNearbyTableViewCell.m */; };
+		3F5EAF611CC9FEB200A2098A /* FBFoodNearbyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F5EAF511CC9FEB200A2098A /* FBFoodNearbyTableViewCell.xib */; };
+		3F5EAF621CC9FEB200A2098A /* FBNearbyXQTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5EAF531CC9FEB200A2098A /* FBNearbyXQTableViewCell.m */; };
+		3F5EAF631CC9FEB200A2098A /* FBNearbyXQTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F5EAF541CC9FEB200A2098A /* FBNearbyXQTableViewCell.xib */; };
+		3F5EAF641CC9FEB200A2098A /* FBScreenXQTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5EAF561CC9FEB200A2098A /* FBScreenXQTableViewCell.m */; };
+		3F5EAF651CC9FEB200A2098A /* FBScreenXQTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F5EAF571CC9FEB200A2098A /* FBScreenXQTableViewCell.xib */; };
+		3F5EAF661CC9FEB200A2098A /* 地区.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F5EAF581CC9FEB200A2098A /* 地区.png */; };
+		3F5EAF671CC9FEB200A2098A /* 小红前.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F5EAF591CC9FEB200A2098A /* 小红前.png */; };
+		3F5EAF681CC9FEB200A2098A /* 红钱.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F5EAF5A1CC9FEB200A2098A /* 红钱.png */; };
+		3F5EAF761CC9FEFF00A2098A /* FBFoodNearbyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5EAF6B1CC9FEFF00A2098A /* FBFoodNearbyViewController.m */; };
+		3F5EAF771CC9FEFF00A2098A /* FBFoodNearbyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F5EAF6C1CC9FEFF00A2098A /* FBFoodNearbyViewController.xib */; };
+		3F5EAF781CC9FEFF00A2098A /* FBFoodXQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5EAF6E1CC9FEFF00A2098A /* FBFoodXQViewController.m */; };
+		3F5EAF791CC9FEFF00A2098A /* FBFoodXQViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F5EAF6F1CC9FEFF00A2098A /* FBFoodXQViewController.xib */; };
+		3F5EAF7A1CC9FEFF00A2098A /* FBFoodNeabyXQrViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5EAF711CC9FEFF00A2098A /* FBFoodNeabyXQrViewController.m */; };
+		3F5EAF7B1CC9FEFF00A2098A /* FBFoodNeabyXQrViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F5EAF721CC9FEFF00A2098A /* FBFoodNeabyXQrViewController.xib */; };
+		3F5EAF7C1CC9FEFF00A2098A /* FBScreenXQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5EAF741CC9FEFF00A2098A /* FBScreenXQViewController.m */; };
+		3F5EAF7D1CC9FEFF00A2098A /* FBScreenXQViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F5EAF751CC9FEFF00A2098A /* FBScreenXQViewController.xib */; };
+		3F5EAF801CC9FF1800A2098A /* NetWorkRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5EAF7F1CC9FF1800A2098A /* NetWorkRequestManager.m */; };
+		3F5EAF831CCA032600A2098A /* 筛选.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F5EAF821CCA032600A2098A /* 筛选.png */; };
+		3F5EAF851CCA0C4B00A2098A /* Button.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5EAF841CCA0C4B00A2098A /* Button.m */; };
+		3FA0AE741CC9C47400A4E074 /* FBDishesSortView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA0AE6D1CC9C47400A4E074 /* FBDishesSortView.m */; };
+		3FA0AE751CC9C47400A4E074 /* FBAllDishesSortView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA0AE6F1CC9C47400A4E074 /* FBAllDishesSortView.m */; };
+		3FA0AE761CC9C47400A4E074 /* FBHotDistrictView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA0AE711CC9C47400A4E074 /* FBHotDistrictView.m */; };
+		3FA0AE771CC9C47400A4E074 /* FBTopicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA0AE731CC9C47400A4E074 /* FBTopicView.m */; };
+		3FA0AE7A1CC9C48200A4E074 /* TopicArticleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA0AE791CC9C48200A4E074 /* TopicArticleModel.m */; };
+
+
+
+>>>>>>> origin/master
 		3FA0AE741CC9C47400A4E074 /* FBDishesSortView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA0AE6D1CC9C47400A4E074 /* FBDishesSortView.m */; settings = {ASSET_TAGS = (); }; };
 		3FA0AE751CC9C47400A4E074 /* FBAllDishesSortView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA0AE6F1CC9C47400A4E074 /* FBAllDishesSortView.m */; settings = {ASSET_TAGS = (); }; };
 		3FA0AE761CC9C47400A4E074 /* FBHotDistrictView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA0AE711CC9C47400A4E074 /* FBHotDistrictView.m */; settings = {ASSET_TAGS = (); }; };
@@ -19,6 +63,10 @@
 		3FA0AE861CC9D01D00A4E074 /* FBShopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA0AE841CC9D01D00A4E074 /* FBShopTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		3FA0AE871CC9D01D00A4E074 /* FBShopTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FA0AE851CC9D01D00A4E074 /* FBShopTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
 		3FA0AE8E1CC9EB3E00A4E074 /* FBSeekRestaurantModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA0AE8D1CC9EB3E00A4E074 /* FBSeekRestaurantModel.m */; settings = {ASSET_TAGS = (); }; };
+
+
+
+
 		8AC21FBA482C7AB968271412 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE07FD59692060158A5A8B3 /* libPods.a */; };
 		BF05540D1CC5249100B608E6 /* FBPrivateEnjoyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF05540B1CC5249100B608E6 /* FBPrivateEnjoyViewController.m */; };
 		BF05540E1CC5249100B608E6 /* FBPrivateEnjoyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF05540C1CC5249100B608E6 /* FBPrivateEnjoyViewController.xib */; };
@@ -69,9 +117,63 @@
 
 /* Begin PBXFileReference section */
 		0ADF5CE1A9ECF69F0ECB2CF1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		3F89D0041CCA5806003BB94B /* FBShopTableViewCell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShopTableViewCell2.h; sourceTree = "<group>"; };
 		3F89D0051CCA5806003BB94B /* FBShopTableViewCell2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShopTableViewCell2.m; sourceTree = "<group>"; };
 		3F89D0061CCA5806003BB94B /* FBShopTableViewCell2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FBShopTableViewCell2.xib; sourceTree = "<group>"; };
+=======
+
+		3F5EAF351CC9FE9400A2098A /* FBFoodPrivateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFoodPrivateModel.h; sourceTree = "<group>"; };
+		3F5EAF361CC9FE9400A2098A /* FBFoodPrivateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBFoodPrivateModel.m; sourceTree = "<group>"; };
+		3F5EAF371CC9FE9400A2098A /* FBPlayPrivateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBPlayPrivateModel.h; sourceTree = "<group>"; };
+		3F5EAF381CC9FE9400A2098A /* FBPlayPrivateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBPlayPrivateModel.m; sourceTree = "<group>"; };
+		3F5EAF391CC9FE9400A2098A /* FBFoodPlayXQModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFoodPlayXQModel.h; sourceTree = "<group>"; };
+		3F5EAF3A1CC9FE9400A2098A /* FBFoodPlayXQModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBFoodPlayXQModel.m; sourceTree = "<group>"; };
+		3F5EAF3B1CC9FE9400A2098A /* FBNearbyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBNearbyModel.h; sourceTree = "<group>"; };
+		3F5EAF3C1CC9FE9400A2098A /* FBNearbyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBNearbyModel.m; sourceTree = "<group>"; };
+		3F5EAF3D1CC9FE9400A2098A /* FBNearbyXQModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBNearbyXQModel.h; sourceTree = "<group>"; };
+		3F5EAF3E1CC9FE9400A2098A /* FBNearbyXQModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBNearbyXQModel.m; sourceTree = "<group>"; };
+		3F5EAF3F1CC9FE9400A2098A /* FBScreenXQModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBScreenXQModel.h; sourceTree = "<group>"; };
+		3F5EAF401CC9FE9400A2098A /* FBScreenXQModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBScreenXQModel.m; sourceTree = "<group>"; };
+		3F5EAF481CC9FEB200A2098A /* FBTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBTableViewCell.h; sourceTree = "<group>"; };
+		3F5EAF491CC9FEB200A2098A /* FBTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBTableViewCell.m; sourceTree = "<group>"; };
+		3F5EAF4A1CC9FEB200A2098A /* FBTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FBTableViewCell.xib; sourceTree = "<group>"; };
+		3F5EAF4B1CC9FEB200A2098A /* FBFoodXQTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFoodXQTableViewCell.h; sourceTree = "<group>"; };
+		3F5EAF4C1CC9FEB200A2098A /* FBFoodXQTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBFoodXQTableViewCell.m; sourceTree = "<group>"; };
+		3F5EAF4D1CC9FEB200A2098A /* FBFoodXQTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FBFoodXQTableViewCell.xib; sourceTree = "<group>"; };
+		3F5EAF4E1CC9FEB200A2098A /* 钱.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "钱.png"; sourceTree = "<group>"; };
+		3F5EAF4F1CC9FEB200A2098A /* FBFoodNearbyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFoodNearbyTableViewCell.h; sourceTree = "<group>"; };
+		3F5EAF501CC9FEB200A2098A /* FBFoodNearbyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBFoodNearbyTableViewCell.m; sourceTree = "<group>"; };
+		3F5EAF511CC9FEB200A2098A /* FBFoodNearbyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FBFoodNearbyTableViewCell.xib; sourceTree = "<group>"; };
+		3F5EAF521CC9FEB200A2098A /* FBNearbyXQTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBNearbyXQTableViewCell.h; sourceTree = "<group>"; };
+		3F5EAF531CC9FEB200A2098A /* FBNearbyXQTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBNearbyXQTableViewCell.m; sourceTree = "<group>"; };
+		3F5EAF541CC9FEB200A2098A /* FBNearbyXQTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FBNearbyXQTableViewCell.xib; sourceTree = "<group>"; };
+		3F5EAF551CC9FEB200A2098A /* FBScreenXQTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBScreenXQTableViewCell.h; sourceTree = "<group>"; };
+		3F5EAF561CC9FEB200A2098A /* FBScreenXQTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBScreenXQTableViewCell.m; sourceTree = "<group>"; };
+		3F5EAF571CC9FEB200A2098A /* FBScreenXQTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FBScreenXQTableViewCell.xib; sourceTree = "<group>"; };
+		3F5EAF581CC9FEB200A2098A /* 地区.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "地区.png"; sourceTree = "<group>"; };
+		3F5EAF591CC9FEB200A2098A /* 小红前.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "小红前.png"; sourceTree = "<group>"; };
+		3F5EAF5A1CC9FEB200A2098A /* 红钱.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "红钱.png"; sourceTree = "<group>"; };
+		3F5EAF6A1CC9FEFF00A2098A /* FBFoodNearbyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFoodNearbyViewController.h; sourceTree = "<group>"; };
+		3F5EAF6B1CC9FEFF00A2098A /* FBFoodNearbyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBFoodNearbyViewController.m; sourceTree = "<group>"; };
+		3F5EAF6C1CC9FEFF00A2098A /* FBFoodNearbyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FBFoodNearbyViewController.xib; sourceTree = "<group>"; };
+		3F5EAF6D1CC9FEFF00A2098A /* FBFoodXQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFoodXQViewController.h; sourceTree = "<group>"; };
+		3F5EAF6E1CC9FEFF00A2098A /* FBFoodXQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBFoodXQViewController.m; sourceTree = "<group>"; };
+		3F5EAF6F1CC9FEFF00A2098A /* FBFoodXQViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FBFoodXQViewController.xib; sourceTree = "<group>"; };
+		3F5EAF701CC9FEFF00A2098A /* FBFoodNeabyXQrViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFoodNeabyXQrViewController.h; sourceTree = "<group>"; };
+		3F5EAF711CC9FEFF00A2098A /* FBFoodNeabyXQrViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBFoodNeabyXQrViewController.m; sourceTree = "<group>"; };
+		3F5EAF721CC9FEFF00A2098A /* FBFoodNeabyXQrViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FBFoodNeabyXQrViewController.xib; sourceTree = "<group>"; };
+		3F5EAF731CC9FEFF00A2098A /* FBScreenXQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBScreenXQViewController.h; sourceTree = "<group>"; };
+		3F5EAF741CC9FEFF00A2098A /* FBScreenXQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBScreenXQViewController.m; sourceTree = "<group>"; };
+		3F5EAF751CC9FEFF00A2098A /* FBScreenXQViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FBScreenXQViewController.xib; sourceTree = "<group>"; };
+		3F5EAF7E1CC9FF1800A2098A /* NetWorkRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkRequestManager.h; sourceTree = "<group>"; };
+		3F5EAF7F1CC9FF1800A2098A /* NetWorkRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkRequestManager.m; sourceTree = "<group>"; };
+		3F5EAF821CCA032600A2098A /* 筛选.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "筛选.png"; sourceTree = "<group>"; };
+		3F5EAF841CCA0C4B00A2098A /* Button.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Button.m; sourceTree = "<group>"; };
+		3F5EAF861CCA0C4E00A2098A /* Button.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Button.h; sourceTree = "<group>"; };
+
+
+>>>>>>> origin/master
 		3FA0AE6C1CC9C47400A4E074 /* FBDishesSortView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBDishesSortView.h; sourceTree = "<group>"; };
 		3FA0AE6D1CC9C47400A4E074 /* FBDishesSortView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBDishesSortView.m; sourceTree = "<group>"; };
 		3FA0AE6E1CC9C47400A4E074 /* FBAllDishesSortView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBAllDishesSortView.h; sourceTree = "<group>"; };
@@ -169,6 +271,86 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+
+		3F5EAF341CC9FE8C00A2098A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3F5EAF351CC9FE9400A2098A /* FBFoodPrivateModel.h */,
+				3F5EAF361CC9FE9400A2098A /* FBFoodPrivateModel.m */,
+				3F5EAF371CC9FE9400A2098A /* FBPlayPrivateModel.h */,
+				3F5EAF381CC9FE9400A2098A /* FBPlayPrivateModel.m */,
+				3F5EAF391CC9FE9400A2098A /* FBFoodPlayXQModel.h */,
+				3F5EAF3A1CC9FE9400A2098A /* FBFoodPlayXQModel.m */,
+				3F5EAF3B1CC9FE9400A2098A /* FBNearbyModel.h */,
+				3F5EAF3C1CC9FE9400A2098A /* FBNearbyModel.m */,
+				3F5EAF3D1CC9FE9400A2098A /* FBNearbyXQModel.h */,
+				3F5EAF3E1CC9FE9400A2098A /* FBNearbyXQModel.m */,
+				3F5EAF3F1CC9FE9400A2098A /* FBScreenXQModel.h */,
+				3F5EAF401CC9FE9400A2098A /* FBScreenXQModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3F5EAF471CC9FE9E00A2098A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3F5EAF861CCA0C4E00A2098A /* Button.h */,
+				3F5EAF841CCA0C4B00A2098A /* Button.m */,
+				3F5EAF481CC9FEB200A2098A /* FBTableViewCell.h */,
+				3F5EAF491CC9FEB200A2098A /* FBTableViewCell.m */,
+				3F5EAF4A1CC9FEB200A2098A /* FBTableViewCell.xib */,
+				3F5EAF4B1CC9FEB200A2098A /* FBFoodXQTableViewCell.h */,
+				3F5EAF4C1CC9FEB200A2098A /* FBFoodXQTableViewCell.m */,
+				3F5EAF4D1CC9FEB200A2098A /* FBFoodXQTableViewCell.xib */,
+				3F5EAF4F1CC9FEB200A2098A /* FBFoodNearbyTableViewCell.h */,
+				3F5EAF501CC9FEB200A2098A /* FBFoodNearbyTableViewCell.m */,
+				3F5EAF511CC9FEB200A2098A /* FBFoodNearbyTableViewCell.xib */,
+				3F5EAF521CC9FEB200A2098A /* FBNearbyXQTableViewCell.h */,
+				3F5EAF531CC9FEB200A2098A /* FBNearbyXQTableViewCell.m */,
+				3F5EAF541CC9FEB200A2098A /* FBNearbyXQTableViewCell.xib */,
+				3F5EAF551CC9FEB200A2098A /* FBScreenXQTableViewCell.h */,
+				3F5EAF561CC9FEB200A2098A /* FBScreenXQTableViewCell.m */,
+				3F5EAF571CC9FEB200A2098A /* FBScreenXQTableViewCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3F5EAF691CC9FEB900A2098A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BF05540A1CC5249100B608E6 /* FBPrivateEnjoyViewController.h */,
+				BF05540B1CC5249100B608E6 /* FBPrivateEnjoyViewController.m */,
+				BF05540C1CC5249100B608E6 /* FBPrivateEnjoyViewController.xib */,
+				3F5EAF6A1CC9FEFF00A2098A /* FBFoodNearbyViewController.h */,
+				3F5EAF6B1CC9FEFF00A2098A /* FBFoodNearbyViewController.m */,
+				3F5EAF6C1CC9FEFF00A2098A /* FBFoodNearbyViewController.xib */,
+				3F5EAF6D1CC9FEFF00A2098A /* FBFoodXQViewController.h */,
+				3F5EAF6E1CC9FEFF00A2098A /* FBFoodXQViewController.m */,
+				3F5EAF6F1CC9FEFF00A2098A /* FBFoodXQViewController.xib */,
+				3F5EAF701CC9FEFF00A2098A /* FBFoodNeabyXQrViewController.h */,
+				3F5EAF711CC9FEFF00A2098A /* FBFoodNeabyXQrViewController.m */,
+				3F5EAF721CC9FEFF00A2098A /* FBFoodNeabyXQrViewController.xib */,
+				3F5EAF731CC9FEFF00A2098A /* FBScreenXQViewController.h */,
+				3F5EAF741CC9FEFF00A2098A /* FBScreenXQViewController.m */,
+				3F5EAF751CC9FEFF00A2098A /* FBScreenXQViewController.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		3F5EAF811CCA031A00A2098A /* image */ = {
+			isa = PBXGroup;
+			children = (
+				3F5EAF821CCA032600A2098A /* 筛选.png */,
+				3F5EAF4E1CC9FEB200A2098A /* 钱.png */,
+				3F5EAF581CC9FEB200A2098A /* 地区.png */,
+				3F5EAF591CC9FEB200A2098A /* 小红前.png */,
+				3F5EAF5A1CC9FEB200A2098A /* 红钱.png */,
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
+
+
 		3FA0AE691CC9C34700A4E074 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -267,6 +449,8 @@
 		BF232C3C1CC5EBB900C07375 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				3F5EAF7E1CC9FF1800A2098A /* NetWorkRequestManager.h */,
+				3F5EAF7F1CC9FF1800A2098A /* NetWorkRequestManager.m */,
 				BF232C3D1CC5EBD700C07375 /* FBHttpsServer.h */,
 				BF232C3E1CC5EBD700C07375 /* FBHttpsServer.m */,
 			);
@@ -402,9 +586,10 @@
 		BF96E2641CC5059500177705 /* PrivateEnjoy */ = {
 			isa = PBXGroup;
 			children = (
-				BF05540A1CC5249100B608E6 /* FBPrivateEnjoyViewController.h */,
-				BF05540B1CC5249100B608E6 /* FBPrivateEnjoyViewController.m */,
-				BF05540C1CC5249100B608E6 /* FBPrivateEnjoyViewController.xib */,
+				3F5EAF811CCA031A00A2098A /* image */,
+				3F5EAF691CC9FEB900A2098A /* Controllers */,
+				3F5EAF471CC9FE9E00A2098A /* View */,
+				3F5EAF341CC9FE8C00A2098A /* Model */,
 			);
 			path = PrivateEnjoy;
 			sourceTree = "<group>";
@@ -524,7 +709,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F5EAF651CC9FEB200A2098A /* FBScreenXQTableViewCell.xib in Resources */,
+				3F5EAF791CC9FEFF00A2098A /* FBFoodXQViewController.xib in Resources */,
 				BF05540E1CC5249100B608E6 /* FBPrivateEnjoyViewController.xib in Resources */,
+				3F5EAF661CC9FEB200A2098A /* 地区.png in Resources */,
+				3F5EAF681CC9FEB200A2098A /* 红钱.png in Resources */,
 				BF96E2261CC4F84F00177705 /* LaunchScreen.storyboard in Resources */,
 				3F89D0081CCA5806003BB94B /* FBShopTableViewCell2.xib in Resources */,
 				3FA0AE871CC9D01D00A4E074 /* FBShopTableViewCell.xib in Resources */,
@@ -532,11 +721,29 @@
 				BF2FA6F71CC71A7F0040EB47 /* 22382_1000_1000.jpg in Resources */,
 				BF96E26D1CC5095400177705 /* FBSeekRestaurantViewController.xib in Resources */,
 				BF2FA6EC1CC65A620040EB47 /* 4.jpg in Resources */,
+
+				3F5EAF611CC9FEB200A2098A /* FBFoodNearbyTableViewCell.xib in Resources */,
+				3F5EAF631CC9FEB200A2098A /* FBNearbyXQTableViewCell.xib in Resources */,
+				BF96E21E1CC4F84F00177705 /* Main.storyboard in Resources */,
+
+				3F5EAF7D1CC9FEFF00A2098A /* FBScreenXQViewController.xib in Resources */,
+
+				3FA0AE7F1CC9CEB800A4E074 /* FBSortByDishesViewController.xib in Resources */,
+
+
 				BF96E21E1CC4F84F00177705 /* Main.storyboard in Resources */,
 				3FA0AE7F1CC9CEB800A4E074 /* FBSortByDishesViewController.xib in Resources */,
+
 				BF2FA6E11CC62E5A0040EB47 /* Assets 17-13-42-368.xcassets in Resources */,
+				3F5EAF671CC9FEB200A2098A /* 小红前.png in Resources */,
+				3F5EAF5F1CC9FEB200A2098A /* 钱.png in Resources */,
+				3F5EAF771CC9FEFF00A2098A /* FBFoodNearbyViewController.xib in Resources */,
 				BF0554191CC5258F00B608E6 /* FBMyViewController.xib in Resources */,
+				3F5EAF7B1CC9FEFF00A2098A /* FBFoodNeabyXQrViewController.xib in Resources */,
 				BF96E2721CC5097400177705 /* FBRecommendViewController.xib in Resources */,
+				3F5EAF831CCA032600A2098A /* 筛选.png in Resources */,
+				3F5EAF5E1CC9FEB200A2098A /* FBFoodXQTableViewCell.xib in Resources */,
+				3F5EAF5C1CC9FEB200A2098A /* FBTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -609,27 +816,66 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+
+				3F5EAF621CC9FEB200A2098A /* FBNearbyXQTableViewCell.m in Sources */,
+
+
 				3FA0AE761CC9C47400A4E074 /* FBHotDistrictView.m in Sources */,
 				BF2FA6E41CC654500040EB47 /* FBCarouselView.m in Sources */,
 				BF96E2181CC4F84F00177705 /* AppDelegate.m in Sources */,
+				3F5EAF411CC9FE9400A2098A /* FBFoodPrivateModel.m in Sources */,
+				3F5EAF7C1CC9FEFF00A2098A /* FBScreenXQViewController.m in Sources */,
 				BF96E26C1CC5095400177705 /* FBSeekRestaurantViewController.m in Sources */,
 				BF232C3F1CC5EBD700C07375 /* FBHttpsServer.m in Sources */,
+				3F5EAF431CC9FE9400A2098A /* FBFoodPlayXQModel.m in Sources */,
+				3F5EAF641CC9FEB200A2098A /* FBScreenXQTableViewCell.m in Sources */,
 				BF2FA6F21CC670CA0040EB47 /* FBRecommendSecCell.m in Sources */,
 				BF96E2151CC4F84F00177705 /* main.m in Sources */,
+				3F5EAF5D1CC9FEB200A2098A /* FBFoodXQTableViewCell.m in Sources */,
 				BF96E2211CC4F84F00177705 /* FirstBlood.xcdatamodeld in Sources */,
 				3FA0AE741CC9C47400A4E074 /* FBDishesSortView.m in Sources */,
+
+
+				3F5EAF601CC9FEB200A2098A /* FBFoodNearbyTableViewCell.m in Sources */,
+				BF2FA6FA1CC752C70040EB47 /* FBTabBarController.m in Sources */,
+				3FA0AE7A1CC9C48200A4E074 /* TopicArticleModel.m in Sources */,
+				3F5EAF781CC9FEFF00A2098A /* FBFoodXQViewController.m in Sources */,
+				3F5EAF451CC9FE9400A2098A /* FBNearbyXQModel.m in Sources */,
+				3F5EAF461CC9FE9400A2098A /* FBScreenXQModel.m in Sources */,
+				3F5EAF851CCA0C4B00A2098A /* Button.m in Sources */,
+				3F5EAF5B1CC9FEB200A2098A /* FBTableViewCell.m in Sources */,
+
 				3FA0AE7E1CC9CEB800A4E074 /* FBSortByDishesViewController.m in Sources */,
 				BF2FA6FA1CC752C70040EB47 /* FBTabBarController.m in Sources */,
 				3FA0AE861CC9D01D00A4E074 /* FBShopTableViewCell.m in Sources */,
+
+
+				3FA0AE7E1CC9CEB800A4E074 /* FBSortByDishesViewController.m in Sources */,
+				BF2FA6FA1CC752C70040EB47 /* FBTabBarController.m in Sources */,
+				3FA0AE861CC9D01D00A4E074 /* FBShopTableViewCell.m in Sources */,
+
 				BF0554181CC5258F00B608E6 /* FBMyViewController.m in Sources */,
 				BF2FA6EF1CC670B40040EB47 /* FBRecommendFirstCell.m in Sources */,
 				BF96E24B1CC4F8B400177705 /* FBBaseViewController.m in Sources */,
+				3F5EAF761CC9FEFF00A2098A /* FBFoodNearbyViewController.m in Sources */,
 				BF96E2711CC5097400177705 /* FBRecommendViewController.m in Sources */,
 				BF05540D1CC5249100B608E6 /* FBPrivateEnjoyViewController.m in Sources */,
+				3F5EAF441CC9FE9400A2098A /* FBNearbyModel.m in Sources */,
 				BF2FA6F51CC67D780040EB47 /* FBRecommendFirstCellView.m in Sources */,
 				BF96E2561CC501A500177705 /* FBConstant.m in Sources */,
+
+
+				3F5EAF801CC9FF1800A2098A /* NetWorkRequestManager.m in Sources */,
+				3F5EAF421CC9FE9400A2098A /* FBPlayPrivateModel.m in Sources */,
+				3F5EAF7A1CC9FEFF00A2098A /* FBFoodNeabyXQrViewController.m in Sources */,
+
 				3FA0AE821CC9CF5400A4E074 /* TopicArticleModel.m in Sources */,
 				3FA0AE8E1CC9EB3E00A4E074 /* FBSeekRestaurantModel.m in Sources */,
+
+
+				3FA0AE821CC9CF5400A4E074 /* TopicArticleModel.m in Sources */,
+				3FA0AE8E1CC9EB3E00A4E074 /* FBSeekRestaurantModel.m in Sources */,
+Please resolve all conflicted files, commit, then try syncing again.
 				3FA0AE751CC9C47400A4E074 /* FBAllDishesSortView.m in Sources */,
 				3FA0AE771CC9C47400A4E074 /* FBTopicView.m in Sources */,
 				BF96E24E1CC4FA5800177705 /* FBBaseNavigationController.m in Sources */,

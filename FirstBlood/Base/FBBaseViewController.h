@@ -17,4 +17,18 @@
  *  @param tintColor    文字颜色
  */
 - (void)setNavBarWithAlpha:(CGFloat)alpha barTintColor:(UIColor *)barTintColor tintColor:(UIColor *)tintColor;
+
+
+//显示菊花效果
+-(void)showHudInViewhint:(NSString *)string;
+
+//隐藏菊花
+-(void)showhide;
+
+//显示提示框
+-(void)showHint:(NSString *)string;
+
+//判断网络状态
+-(BOOL)isNetWork;
+
 @end
