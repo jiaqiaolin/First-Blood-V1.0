@@ -17,8 +17,19 @@
 
 -(void)setValue:(id)value forKey:(NSString *)key
 {
-    if ([key isEqualToString:@"id"]) {
-        self.listID = value;
+    if ([key isEqualToString:@"imgs"]) {
+        NSString* str = value;
+        _imgArray = [str componentsSeparatedByString:@","];
+    }
+    else if([key isEqualToString:@"brightPoints"])
+    {
+        NSString* str = value;
+        _brightPointsArray = [str componentsSeparatedByString:@"_|_"];
+    }
+    else if([key isEqualToString:@"tags"])
+    {
+        NSString* str = value;
+        _tagsArray = [str componentsSeparatedByString:@","];
     }
     else
     {

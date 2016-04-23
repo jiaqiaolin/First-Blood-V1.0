@@ -15,8 +15,13 @@
 @property (nonatomic, copy)NSString *brightPoints;
 @property (nonatomic, copy)NSString *imgs;
 @property (nonatomic, copy)NSString *logo;
+@property (nonatomic, copy)NSString *tags;
 @property (nonatomic, assign)NSInteger avgPrice;
-@property (nonatomic, copy)NSString* listID;
+@property (nonatomic, assign)NSInteger haveGoods;
 
+//@property (nonatomic, copy)NSString* listID;
 
+@property (nonatomic, copy)NSArray *imgArray;
+@property (nonatomic, copy)NSArray *brightPointsArray;
+@property (nonatomic, copy)NSArray *tagsArray;
 @end

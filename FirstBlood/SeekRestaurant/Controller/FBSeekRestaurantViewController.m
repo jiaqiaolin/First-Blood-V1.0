@@ -39,6 +39,8 @@
 //    self.timer = timer;
 //    dispatch_resume(timer);
     
+    
+    
     UIScrollView* scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, FB_SCREEN_WIDTH, FB_SCREEN_HEIGHT)];
     [scrollView setContentSize:CGSizeMake(FB_SCREEN_WIDTH, 2 * FB_SCREEN_HEIGHT )];
     [scrollView setShowsVerticalScrollIndicator:NO];
@@ -46,7 +48,10 @@
     FBAllDishesSortView* view = [[FBAllDishesSortView alloc]initWithFrame:CGRectMake(0, 0, FB_SCREEN_WIDTH, FB_SCREEN_HEIGHT / 3.5) returnTagsBlock:^(NSInteger tags) {
         
         
+        NSString* str = [FBSortByDishesUrl stringByReplacingOccurrencesOfString:@"tagID=" withString:[NSString stringWithFormat:@"tagID=%ld",tags]];
+        
         FBSortByDishesViewController* vc = [[FBSortByDishesViewController alloc]init];
+        vc.urlStr = str;
         vc.tagID = tags;
         [self.navigationController pushViewController:vc animated:YES];
         NSLog(@"%@",[NSString stringWithFormat:@"%@%ld",FBSeekRestaurantTopicUrl,tags]);
@@ -54,9 +59,18 @@
         
     }];
     
-    FBHotDistrictView* FBHDView = [[FBHotDistrictView alloc]initWithFrame:CGRectMake(0, FB_SCREEN_HEIGHT / 3.5, FB_SCREEN_WIDTH, FB_SCREEN_HEIGHT / 2.2)];
+    FBHotDistrictView* FBHDView = [[FBHotDistrictView alloc]initWithFrame:CGRectMake(0, FB_SCREEN_HEIGHT / 3.5, FB_SCREEN_WIDTH, FB_SCREEN_HEIGHT / 2.2) returnTagsBlock:^(NSInteger tags) {
+        
+        NSString* str = [FBHotDistrictUrl stringByReplacingOccurrencesOfString:@"areaID=" withString:[NSString stringWithFormat:@"areaID=%ld",tags]];
+        FBSortByDishesViewController* vc = [[FBSortByDishesViewController alloc]init];
+        vc.urlStr = str;
+        vc.tagID = 0;
+        [self.navigationController pushViewController:vc animated:YES];
+        
+        
+    }];
     
-    _FBTView = [[FBTopicView alloc]initWithFrame:CGRectMake(0, FB_SCREEN_HEIGHT / 3.5 + FB_SCREEN_HEIGHT / 2.2, FB_SCREEN_WIDTH, FB_SCREEN_HEIGHT )];
+    _FBTView = [[FBTopicView alloc]initWithFrame:CGRectMake(0, FB_SCREEN_HEIGHT / 3.5 + FB_SCREEN_HEIGHT / 2.2, FB_SCREEN_WIDTH, FB_SCREEN_HEIGHT ) ];
     [scrollView addSubview:view];
     [scrollView addSubview:FBHDView];
     [scrollView addSubview:_FBTView];

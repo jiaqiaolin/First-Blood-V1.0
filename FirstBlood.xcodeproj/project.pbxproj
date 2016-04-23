@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F89D0071CCA5806003BB94B /* FBShopTableViewCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F89D0051CCA5806003BB94B /* FBShopTableViewCell2.m */; settings = {ASSET_TAGS = (); }; };
+		3F89D0081CCA5806003BB94B /* FBShopTableViewCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F89D0061CCA5806003BB94B /* FBShopTableViewCell2.xib */; settings = {ASSET_TAGS = (); }; };
 		3FA0AE741CC9C47400A4E074 /* FBDishesSortView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA0AE6D1CC9C47400A4E074 /* FBDishesSortView.m */; settings = {ASSET_TAGS = (); }; };
 		3FA0AE751CC9C47400A4E074 /* FBAllDishesSortView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA0AE6F1CC9C47400A4E074 /* FBAllDishesSortView.m */; settings = {ASSET_TAGS = (); }; };
 		3FA0AE761CC9C47400A4E074 /* FBHotDistrictView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA0AE711CC9C47400A4E074 /* FBHotDistrictView.m */; settings = {ASSET_TAGS = (); }; };
@@ -67,6 +69,9 @@
 
 /* Begin PBXFileReference section */
 		0ADF5CE1A9ECF69F0ECB2CF1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		3F89D0041CCA5806003BB94B /* FBShopTableViewCell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShopTableViewCell2.h; sourceTree = "<group>"; };
+		3F89D0051CCA5806003BB94B /* FBShopTableViewCell2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShopTableViewCell2.m; sourceTree = "<group>"; };
+		3F89D0061CCA5806003BB94B /* FBShopTableViewCell2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FBShopTableViewCell2.xib; sourceTree = "<group>"; };
 		3FA0AE6C1CC9C47400A4E074 /* FBDishesSortView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBDishesSortView.h; sourceTree = "<group>"; };
 		3FA0AE6D1CC9C47400A4E074 /* FBDishesSortView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBDishesSortView.m; sourceTree = "<group>"; };
 		3FA0AE6E1CC9C47400A4E074 /* FBAllDishesSortView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBAllDishesSortView.h; sourceTree = "<group>"; };
@@ -225,6 +230,9 @@
 				3FA0AE831CC9D01D00A4E074 /* FBShopTableViewCell.h */,
 				3FA0AE841CC9D01D00A4E074 /* FBShopTableViewCell.m */,
 				3FA0AE851CC9D01D00A4E074 /* FBShopTableViewCell.xib */,
+				3F89D0041CCA5806003BB94B /* FBShopTableViewCell2.h */,
+				3F89D0051CCA5806003BB94B /* FBShopTableViewCell2.m */,
+				3F89D0061CCA5806003BB94B /* FBShopTableViewCell2.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -518,6 +526,7 @@
 			files = (
 				BF05540E1CC5249100B608E6 /* FBPrivateEnjoyViewController.xib in Resources */,
 				BF96E2261CC4F84F00177705 /* LaunchScreen.storyboard in Resources */,
+				3F89D0081CCA5806003BB94B /* FBShopTableViewCell2.xib in Resources */,
 				3FA0AE871CC9D01D00A4E074 /* FBShopTableViewCell.xib in Resources */,
 				BF2FA6DF1CC60B7C0040EB47 /* cute.gif in Resources */,
 				BF2FA6F71CC71A7F0040EB47 /* 22382_1000_1000.jpg in Resources */,
@@ -624,6 +633,7 @@
 				3FA0AE751CC9C47400A4E074 /* FBAllDishesSortView.m in Sources */,
 				3FA0AE771CC9C47400A4E074 /* FBTopicView.m in Sources */,
 				BF96E24E1CC4FA5800177705 /* FBBaseNavigationController.m in Sources */,
+				3F89D0071CCA5806003BB94B /* FBShopTableViewCell2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

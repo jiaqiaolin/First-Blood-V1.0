@@ -8,29 +8,22 @@
 
 #import "FBSortByDishesViewController.h"
 #import "FBShopTableViewCell.h"
+#import "FBShopTableViewCell2.h"
 #import "FBHttpsServer.h"
 #import "FBSeekRestaurantModel.h"
+#import "UIImageView+WebCache.h"
 
-typedef NS_ENUM(NSInteger, tasteType)
-{
-    西餐 = 3001,
-    日料,
-    甜品,
-    中国菜,
-    火锅,
-    自助餐,
-    酒吧,
-    咖啡
-};
 
 @interface FBSortByDishesViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView *_tableView;
+    NSArray* _imgArray;
+    
 }
 
-@property (nonatomic, strong)NSDictionary *dic;
-@property (nonatomic,retain)NSMutableArray* RestaurantListArray;
 
+@property (nonatomic,retain)NSMutableArray* RestaurantListArray;
+@property (nonatomic, strong) NSDictionary *dic;
 @end
 
 @implementation FBSortByDishesViewController
@@ -41,7 +34,6 @@ typedef NS_ENUM(NSInteger, tasteType)
     [super viewDidLoad];
     
     _dic = [NSDictionary dictionaryWithObjectsAndKeys:@"西餐",@"3001",@"日料",@"3002",@"甜品",@"3003",@"中国菜",@"3004",@"火锅",@"3005",@"自助餐",@"3006",@"酒吧",@"3007",@"咖啡",@"3008",nil];
-    
     [self setTitle:@"探店"];
     
     _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, FB_SCREEN_WIDTH, FB_SCREEN_HEIGHT - 64 - 44) style:UITableViewStylePlain];
@@ -65,16 +57,49 @@ typedef NS_ENUM(NSInteger, tasteType)
 
 
 
--(NSString*)getUrl
-{
-    NSString* str = [FBSortByDishesUrl stringByReplacingOccurrencesOfString:@"tagID=" withString:[NSString stringWithFormat:@"tagID=%ld",self.tagID]];
-    return str;
-}
+//-(NSString*)getUrl
+//{
+//    NSString* str = [FBSortByDishesUrl stringByReplacingOccurrencesOfString:@"tagID=" withString:[NSString stringWithFormat:@"tagID=%ld",self.tagID]];
+//    return str;
+//}
 
 #pragma mark - <UITableViewDelegate>
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+   
+    FBSeekRestaurantModel* model = _RestaurantListArray[indexPath.row];
+    if (model.imgArray.count == 0) {
+        static NSString *cellid = @"FBShopTableViewCell2";
+        FBShopTableViewCell2 *cell = [tableView dequeueReusableCellWithIdentifier:cellid];
+        if (!cell)
+        {
+            cell = [[[NSBundle mainBundle] loadNibNamed:@"FBShopTableViewCell2" owner:nil options:nil] objectAtIndex:0];
+            
+        }
+        
+        cell.nameLabel.text = model.name;
+        if (self.tagID != 0) {
+            NSString *str = [NSString stringWithFormat:@"%ld",self.tagID];
+            cell.dishesType.text = [_dic objectForKey:str];
+        }
+        else
+        {
+            
+            cell.dishesType.text =[_dic objectForKey:model.tagsArray.lastObject];
+        }
+        if (model.haveGoods == 1) {
+            [cell.vipImgView setImage:[UIImage imageNamed:@"SeekRestaurantVip"]];
+        }
+        [cell.logoImageView sd_setImageWithURL:[NSURL URLWithString:model.logo]];
+        cell.areaNameLabel.text = model.areaName;
+        cell.avgPriceLabel.text = [NSString stringWithFormat:@"%ld",model.avgPrice];
+        
+        return cell;
+
+    }
     
+    else
+    {
     static NSString *cellid = @"FBShopTableViewCell";
     FBShopTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellid];
     if (!cell)
@@ -82,7 +107,31 @@ typedef NS_ENUM(NSInteger, tasteType)
         cell = [[[NSBundle mainBundle] loadNibNamed:@"FBShopTableViewCell" owner:nil options:nil] lastObject];
     }
     
-    return cell;
+    cell.nameLabel.text = model.name;
+    if (self.tagID != 0) {
+        NSString *str = [NSString stringWithFormat:@"%ld",self.tagID];
+        cell.dishesType.text = [_dic objectForKey:str];
+    }
+    else
+    {
+        cell.dishesType.text =[_dic objectForKey:model.tagsArray.lastObject];
+    }
+        
+    if (model.haveGoods == 1) {
+        [cell.vipImgView setImage:[UIImage imageNamed:@"SeekRestaurantVip"]];
+    }
+    [cell.logoImageView sd_setImageWithURL:[NSURL URLWithString:model.logo]];
+    cell.areaNameLabel.text = model.areaName;
+    cell.avgPriceLabel.text = [NSString stringWithFormat:@"%ld",model.avgPrice];
+    
+    [self setbrightPointsLabelWithArray:model.brightPointsArray cell:cell];
+    [cell.firstImage sd_setImageWithURL:[NSURL URLWithString:model.imgArray[0]]];
+    [cell.secImageView sd_setImageWithURL:[NSURL URLWithString:model.imgArray[1]]];
+    [cell.thirdImageView sd_setImageWithURL:[NSURL URLWithString:model.imgArray[2]]];
+    
+    
+     return cell;
+    }
 }
 
 #pragma mark - <UITableViewDataSource>
@@ -99,12 +148,12 @@ typedef NS_ENUM(NSInteger, tasteType)
 -(void)getModel
 {
     
-    [[FBHttpsServer shareHttps]connectHttpsWithUrl:[self getUrl] model:httpsModelDefault method:get postBody:nil resultBlock:^(id result, NSURLResponse *response, NSError *error) {
+    [[FBHttpsServer shareHttps]connectHttpsWithUrl:self.urlStr model:httpsModelDefault method:get postBody:nil resultBlock:^(id result, NSURLResponse *response, NSError *error) {
         NSArray *array = result[@"data"][@"list"];
         for (NSDictionary* dic in array) {
-            NSLog(@"dic = %@",dic);
             FBSeekRestaurantModel* model = [[FBSeekRestaurantModel alloc]init];
             [model setValuesForKeysWithDictionary:dic];
+     
             [self.RestaurantListArray addObject:model];
         }
         
@@ -115,9 +164,46 @@ typedef NS_ENUM(NSInteger, tasteType)
         
     }];
     
-    NSLog(@"count = %ld",_RestaurantListArray.count);
 }
 
+
+
+//给cell.brightPointsLabel赋值
+-(void)setbrightPointsLabelWithArray:(NSArray*)array cell:(FBShopTableViewCell*)cell
+{
+    NSInteger labelCount = array.count;
+    switch (labelCount) {
+        case 0:
+            cell.firstBrightPointLabel.text = @"";
+            cell.dotLabel1.text = @"";
+            cell.secBrightPointLabel.text = @"";
+            cell.dotLabel2.text = @"";
+            cell.thirdBrightPointLabel.text = @"";
+            cell.dotLabel3.text = @"";
+            break;
+        case 1:
+            cell.firstBrightPointLabel.text = array[0];
+            cell.dotLabel1.text = @"";
+            cell.secBrightPointLabel.text = @"";
+            cell.dotLabel2.text = @"";
+            cell.thirdBrightPointLabel.text = @"";
+            cell.dotLabel3.text = @"";
+            break;
+        case 2:
+            cell.firstBrightPointLabel.text = array[0];
+            cell.secBrightPointLabel.text = array[1];
+            cell.thirdBrightPointLabel.text = @"";
+            cell.dotLabel3.text = @"";
+            break;
+        case 3:
+            cell.firstBrightPointLabel.text = array[0];
+            cell.secBrightPointLabel.text = array[1];
+            cell.thirdBrightPointLabel.text = array[2];
+            break;
+        default:
+            break;
+    }
+}
 
 //懒加载形式(getter方法)
 -(NSMutableArray*)RestaurantListArray

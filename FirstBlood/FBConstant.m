@@ -14,3 +14,4 @@ NSString * const FBSecCellUrlHeader = @"http://oper.imeetin.com/rest/subject/lis
 //SeekRestaurant
 NSString * const FBSeekRestaurantTopicUrl = @"http://rest.imeetin.com/rest/article/view?id=";
 NSString * const FBSortByDishesUrl = @"http://rest.imeetin.com/rest/tenant/list?page=1&sort=taste&tagID=";
+NSString * const FBHotDistrictUrl = @"http://rest.imeetin.com/rest/tenant/list?areaID=&page=1&sort=taste";

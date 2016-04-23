@@ -10,7 +10,9 @@
 
 @interface FBSortByDishesViewController : FBBaseViewController
 
-/** 把网络请求需要的tag值传入*/
+/** 把网络请求需要的url传入*/
+@property (nonatomic, copy) NSString *urlStr;
 @property (nonatomic, assign) NSInteger tagID;
+
 
 @end

@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+typedef void (^clickBlock)(NSInteger tags);
 @interface FBHotDistrictView : UIView
 
-
+@property (nonatomic, copy) clickBlock block;
 @property (nonatomic, retain) UILabel *titleLabel;
 @property (nonatomic, retain) UIButton *districtBtn;
 
--(instancetype)initWithFrame:(CGRect)frame;
+-(instancetype)initWithFrame:(CGRect)frame returnTagsBlock:(clickBlock)block;
 
 @end
